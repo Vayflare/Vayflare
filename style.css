@@ -1,0 +1,153 @@
+body {
+    background-color: #070707;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: #0e0e0e;
+    width: 900px;
+    height: 900px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+    color: white;
+}
+
+.entry-box {
+    background: linear-gradient(45deg, #dc57a2, #9c599f);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.main-box, .stack, .contact {
+    font-weight: 350;
+    background: linear-gradient(45deg, #070707, #0c0b0c);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main-box h3, .stack h3, .contact h3 {
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.main-box h3::after, .stack h3::after, .contact h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 75%;
+    height: 2px;
+    background: linear-gradient(45deg, #dc57a2, #9c599f);
+    transform: translateX(-50%);
+}
+
+.icons, .frameworks, .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.icons i, .frameworks i, .links i {
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    margin: 0 10px;
+}
+
+.contact a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.contact a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 75%;
+    height: 2px;
+    background: linear-gradient(45deg, #dc57a2, #9c599f);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.contact a:hover::after {
+    width: 100%;
+}
+
+.contact a:hover {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background: linear-gradient(45deg, #070707, #0c0b0c);
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #9c599f;
+    width: 60%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
